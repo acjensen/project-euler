@@ -1,4 +1,4 @@
-with open('p022_names.txt') as f:
+with open('0022_names.txt') as f:
     content = f.readlines()
 content = content[0]
 content = content.replace('\"', '')
