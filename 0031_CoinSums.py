@@ -6,6 +6,7 @@ def getSum():
         i = i + 1
     return sum
 
+
 total = 0
 values = [5, 2, 1]
 counts = [0, 0, 0]
@@ -21,27 +22,8 @@ for i, value in enumerate(values):
     if remainder == 0:
         total = total + 1
         counts[i] = counts[i] - 1
-    for j in range(1,len(values)-1-i):
+    for j in range(1, len(values)-1-i):
         values[i + j] = int(remainder/values[i + j])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 '''
@@ -82,13 +64,13 @@ while i < len(coinValue):
             j = j + 1
         else:
             j = j + 1
-        print coinCount
+        print (coinCount)
     i = i + 1
 
 
 
 
 
-print count + 1
+print (count + 1)
 
 '''

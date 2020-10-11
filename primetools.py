@@ -13,12 +13,14 @@ def getPrimes(prime_limit):
     primes = boolToPrimes(integers)
     return primes[2:]
 
+
 def markPrimes(prime, integers, prime_limit):
     # 3. enumerate the multples of prime p
     i = 2
     while prime*i < prime_limit:
         integers[prime*i] = False
         i = i + 1
+
 
 def getNextPrime(current_prime, integers, prime_limit):
     # 4. find the next prime j starting at the first multiple of current prime p
@@ -29,6 +31,7 @@ def getNextPrime(current_prime, integers, prime_limit):
         else:
             next_prime += 1
     return -1
+
 
 def boolToPrimes(integers):
     primes = []

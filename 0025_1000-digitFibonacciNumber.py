@@ -4,9 +4,9 @@ f = 0
 i = 2
 while len(list(str(f))) < 1000:
     f = x + y
-    #print f
+    # print f
     x = y
     y = f
     i += 1
 
-print i
+print(i)

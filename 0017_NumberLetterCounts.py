@@ -1,4 +1,4 @@
-#note that it is forty not fourty
+# note that it is forty not fourty
 
 intWords = {
     0: "",
@@ -31,6 +31,7 @@ intWords = {
     90: "ninety"
 }
 
+
 def intToWords(n):
     digits = [int(i) for i in str(n)]
     if len(digits) == 4:
@@ -51,9 +52,10 @@ def intToWords(n):
     if len(digits) == 1:
         return intWords.get(digits[0])
 
+
 total = 0
-for n in range(1,1001):
+for n in range(1, 1001):
     words = intToWords(n)
-    print n, words
+    print(n, words)
     total = total + len(words)
-print 'total:', total
+print('total:', total)

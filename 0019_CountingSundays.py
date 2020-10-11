@@ -46,7 +46,7 @@ while year < 2000:
         else:
             daysInMonth = [0,31,28,31,30,31,30,31,31,30,31,30,31]
 
-    print 'Date:', weeks[dayCounterWeek]+ ',', months[month], str(dayCounterMonth) + ',', year
+    print ('Date:', weeks[dayCounterWeek]+ ',', months[month], str(dayCounterMonth) + ',', year)
     if dayCounterMonth == 1 and dayCounterWeek == 7:
         #print 'Sunday fell on the first of the month!!'
         total += 1
@@ -54,4 +54,4 @@ while year < 2000:
     dayCounterMonth += 1
     dayCounterWeek += 1
 
-print total
+print (total)

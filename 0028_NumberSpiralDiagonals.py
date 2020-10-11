@@ -11,4 +11,4 @@ while skip + 2 < squareSize + 4:
         skip += 2
         corner = 0
 
-print (sum(ls[:-3]))
+print(sum(ls[:-3]))

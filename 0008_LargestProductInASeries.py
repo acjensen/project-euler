@@ -4,8 +4,9 @@ ls = [int(d) for d in str(n)]
 for index, digit in enumerate(ls):
     product = 1
     if index + 13 < len(ls):
-        for x in range(0,13):
+        for x in range(0, 13):
             product = product * ls[index + x]
-    if product > max_product: max_product = product
+    if product > max_product:
+        max_product = product
 
-print max_product
+print(max_product)

@@ -11,7 +11,7 @@ connectors = list(triangle)
 for row_i, this_row in enumerate(triangle):
     if row_i < len(triangle) - 1:
         next_row = list(triangle[row_i + 1])
-        for num_j, this_num  in enumerate(this_row):
+        for num_j, this_num in enumerate(this_row):
             if num_j < len(this_row) - 1:
                 next_num = this_row[num_j + 1]
                 if this_num > next_num:
@@ -24,7 +24,7 @@ for row_i, this_row in enumerate(triangle):
                 triangle[row_i + 1] = next_row
 
 for i, row in enumerate(reversed(triangle)):
-    print i, row
-    print i, connectors[len(connectors)-i-1]
+    print(i, row)
+    print(i, connectors[len(connectors)-i-1])
 
-print 'answer:', triangle[len(triangle)-1]
+print('answer:', triangle[len(triangle)-1])

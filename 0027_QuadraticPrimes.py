@@ -1,5 +1,6 @@
 import math
 
+
 def isPrime(n):
     if n < 0:
         return False
@@ -7,9 +8,10 @@ def isPrime(n):
         return False
     return all(n % i for i in range(3, int(math.sqrt(n)) + 1, 2))
 
+
 nMax = 0
-a_ = range(-999,999)
-b_ = range(-1000,1000)
+a_ = range(-999, 999)
+b_ = range(-1000, 1000)
 
 for a in a_:
     for b in b_:
@@ -22,4 +24,4 @@ for a in a_:
             ans_b = b
         #print (a,b,n)
 
-print (ans_a*ans_b)
+print(ans_a*ans_b)

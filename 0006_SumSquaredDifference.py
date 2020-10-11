@@ -16,10 +16,10 @@ sum_of_squares = n*(n+1)*(2*n+1)/6
 
 total = 0
 for x in range(1, n+1):
-     total = total + x
+    total = total + x
 
 square_of_sum = total*total
 
-print sum_of_squares
-print square_of_sum
-print "answer =", square_of_sum - sum_of_squares
+print(sum_of_squares)
+print(square_of_sum)
+print("answer =", square_of_sum - sum_of_squares)

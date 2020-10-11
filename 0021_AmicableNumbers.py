@@ -1,12 +1,13 @@
 import collections
 import itertools
 
+
 def getPrimeFactors(n):
     primes = []
     i = 2
     while i <= n:
-        #print n, 'divided by', i
-        if n%i == 0:
+        # print n, 'divided by', i
+        if n % i == 0:
             n = n/i
             primes.append(i)
         else:
@@ -14,9 +15,10 @@ def getPrimeFactors(n):
     primes.append(1)
     return primes
 
+
 def getDivisors(prime_factors):
     divisors = []
-    for x in range(1,len(prime_factors)-1):
+    for x in range(1, len(prime_factors)-1):
         combos = list(itertools.combinations(prime_factors, x))
         for combo in combos:
             product = 1
@@ -25,18 +27,20 @@ def getDivisors(prime_factors):
             divisors.append(product)
     return set(divisors)
 
+
 def sumDivisors(n):
     prime_factors = getPrimeFactors(n)
     divisors = getDivisors(prime_factors)
-    #print 'prime factors:', prime_factors
-    #print 'divisors:', list(divisors)
+    #print ('prime factors:', prime_factors)
+    #print ('divisors:', list(divisors))
     total = 0
     for x in divisors:
         total = total + x
     return total
 
+
 amicable = []
-for n in range(1,10001):
+for n in range(1, 10001):
     total = sumDivisors(n)
     if n == sumDivisors(total) and n != total:
         amicable.append(n)
@@ -44,5 +48,5 @@ for n in range(1,10001):
 total = 0
 for x in list(set(amicable)):
     total = total + x
-print amicable
-print total
+print(amicable)
+print(total)
